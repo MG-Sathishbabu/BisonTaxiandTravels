@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+
+<!-- Mirrored from html.theme-village.com/ridenexa/contact.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 19 Feb 2025 04:59:30 GMT -->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>Bison Taxi and Travels - Contact Us</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="apple-touch-icon" href="images/favicon.html">
+	<link rel="shortcut icon" href="images/favicon.ico">
+	<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@600;700&amp;family=Sora:wght@400;500;700&amp;display=swap"
+		rel="stylesheet">
+	<!-- Font Awesome CSS -->
+	<link rel="stylesheet" href="font-awesome/css/all.min.css">
+	<!-- Style css -->
+	<link rel="stylesheet" href="css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="css/nice-select2.css">
+	<link rel="stylesheet" href="css/venobox.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+$(document).ready(function() {
+    $("#contactForm").submit(function(event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        var formData = $(this).serialize(); // Serialize form data
+
+        $.ajax({
+            type: "POST",
+            url: "send_email.php", // Your PHP script to handle the email
+            data: formData, // Send the form data
+            success: function(response) {
+                if(response == "success") {
+                    // Show the success popup
+                    $("#successPopup").fadeIn();
+                    setTimeout(function() {
+                        $("#successPopup").fadeOut(); // Hide it after a few seconds
+                    }, 5000);
+                } else {
+                    alert("Something went wrong, please try again.");
+                }
+            },
+            error: function() {
+                alert("There was an error with the form submission.");
+            }
+        });
+    });
+});
+</script>
+
+		
+
+			
+</head>
+
+<body>
+
+	<!-- Header Start -->
+	<header class="header header-white">
+		<div class="top-bar">
+		   <div class="container">
+			  <div class="top-info dropdown d-lg-none">
+				 <a class="topbar-link dropdown-toggle" style="color: white;" href="#" data-bs-toggle="dropdown"
+					aria-expanded="false">Quick Connect</a>
+				 <ul class="dropdown-menu shadow-sm">
+					<li><a class="dropdown-item" href="tel:+91 9585943849"><img src="images/icons/phone-call.png"
+							 alt="">+91 9585943849</a>
+					</li>
+					<li><a class="dropdown-item" href="mailto:ridenexa@gmail.com"><img src="images/icons/email.png" alt="">abaraham143@gmail.com</a></li>
+					<li><span ><img src="images/icons/location.png" alt="">No. 99/100, Kovil medu, Yercaud, Salem Dt - 636601</span>
+					</li>
+				 </ul>
+			  </div>
+			  <div class="top-info d-none d-lg-block">
+				 <ul class="list-group list-group-horizontal list-unstyled">
+					<li class="list-item-inline">
+					   <a href="tel:+91 9585943849" style="color: white;"><img src="images/icons/phone-call.png" alt="">+91 9585943849</a>
+					</li>
+					<li class="list-item-inline">
+					   <a class="dropdown-item" style="color: white;" href="mailto:ridenexa@gmail.com"><img src="images/icons/email.png" alt="">abaraham143@gmail.com</a>
+					</li>
+					<li class="list-item-inline">
+					   <span style="color: white;"><img src="images/icons/location.png"  alt="">No. 99/100, Kovil medu, Yercaud, Salem Dt - 636601</span>
+					</li>
+				 </ul>
+			  </div>
+  
+			  <!-- <div class="top-connect d-flex align-items-center">
+				 <div class="top-social d-none d-md-block">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					<a href="#"><i class="fa-brands fa-skype"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+				 </div> -->
+				 <!-- <div class="language-select d-none d-sm-block">
+					<select id="select">
+					   <option value="1">English</option>
+					   <option value="1">Spanish</option>
+					</select>
+				 </div> -->
+				 <!-- <a href="driver-dashboard.html" class="ms-3 text-secondary"><i class="fa fa-users me-2"></i>Driver Dashboard</a> -->
+			  </div>
+		   </div>
+		</div>
+  
+		<nav class="navbar navbar-expand-lg">
+		   <div class="container rounded-4 bg-dark">
+			  <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="Logo"></a>
+				 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="toggle-inner"></span>
+				 </button>
+			  <!-- <div class="nav-cta d-none d-sm-block order-lg-3">
+				 <div class="d-flex align-items-center">
+					<div class="dropdown nav-search">
+					   <a class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+						  <i class="fa fa-search text-white"></i>
+					   </a>
+					   <ul class="dropdown-menu shadow-sm border-0">
+						  <form class="input-group">
+							 <input class="form-control border-light" type="search" placeholder="Your destination ..."
+								aria-label="Search">
+							 <button class="btn btn-primary m-0" type="submit">Search</button>
+						  </form>
+					   </ul>
+					</div>
+					<a href="sign-up.html" class="btn btn-info ms-4">Create Account</a>
+				 </div>
+			  </div> -->
+			  <!-- Nav CTA End -->
+			  <div class="collapse navbar-collapse oder-lg-2" id="navbarSupportedContent">
+				 <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item "><a class="nav-link " href="index.html"
+						  data-bs-toggle="dropdown">Home</a>
+					   <!-- <ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="index-2.html">Home 1</a></li>
+						  <li><a class="dropdown-item" href="index-3.html">Home 2</a></li>
+						  <li><a class="dropdown-item" href="index-4.html">Home 3</a></li>
+					   </ul> -->
+					</li>
+					<li class="nav-item">
+					   <a class="nav-link" href="about.html">about us</a>
+					</li>
+					<li class="nav-item "><a class="nav-link " href="#"
+						  data-bs-toggle="dropdown">services</a>
+					   <!-- <ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="services.html">All Services</a></li>
+						  <li><a class="dropdown-item" href="single-service.html">Service Details</a></li>
+					   </ul> -->
+					</li>
+  
+					<!-- <li class="nav-item dropdown">
+					   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+						  data-bs-auto-close="outside">Pages</a>
+  
+					   <ul class="dropdown-menu">
+  
+						  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+								data-bs-toggle="dropdown">Car List</a>
+							 <ul class="dropdown-menu">
+								<li><a href="car-listing.html" class="dropdown-item">All Car Lists</a></li>
+								<li><a class="dropdown-item" href="single-car.html">Car Details</a></li>
+							 </ul>
+						  </li>
+						  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+								data-bs-toggle="dropdown">All Riders</a>
+							 <ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="riders.html">All Riders</a></li>
+								<li><a class="dropdown-item" href="single-rider.html">Rider Details</a></li>
+							 </ul>
+						  </li>
+						  <li><a class="dropdown-item" href="about.html">About Us</a></li>
+						  <li><a class="dropdown-item" href="sign-up.html">Creat Account</a></li>
+						  <li><a class="dropdown-item" href="sign-in.html">Sing In</a></li>
+						  <li><a class="dropdown-item" href="pricing.html">Pricing</a></li>
+						  <li><a class="dropdown-item" href="404.html">404 Error</a></li>
+					   </ul>
+					</li>
+  
+					<li class="nav-item dropdown">
+					   <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+						  data-bs-auto-close="outside">Blog</a>
+					   <ul class="dropdown-menu">
+						  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+								data-bs-toggle="dropdown">Blog List</a>
+							 <ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="blog-list-sidebar.html">Blog List with Sidebar</a></li>
+								<li><a class="dropdown-item" href="blog-list.html">Blog List no Sidebar</a></li>
+							 </ul>
+						  </li>
+						  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+								data-bs-toggle="dropdown">Blog Grid</a>
+							 <ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="blog-grid-sidebar.html">Blog Grid with Sidebar</a></li>
+								<li><a class="dropdown-item" href="blog-grid.html">Blog Grid no Sidebar</a></li>
+							 </ul>
+						  </li>
+						  <li class="dropdown"><a class="dropdown-item dropdown-toggle" href="#"
+								data-bs-toggle="dropdown">Blog
+								Details</a>
+							 <ul class="dropdown-menu">
+								<li><a class="dropdown-item" href="single-post-sidebar.html">Article with Sidebar</a></li>
+								<li><a class="dropdown-item" href="single-post.html">Article no Sidebar</a></li>
+							 </ul>
+						  </li>
+					   </ul>
+					</li> -->
+					<li class="nav-item">
+					   <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+				 </ul>
+			  </div>
+		   </div>
+		</nav>
+	 </header>
+
+	<!-- Promo Start -->
+	<section class="promo-sec" style="background: url('images/promo-bg.jpg')no-repeat center center / cover;">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="promo-wrap text-center">
+						<h2 class="fw-bold text-white text-uppercase">Contact Us</h2>
+						<nav aria-label="breadcrumb w-75 mx-auto">
+							<ol class="breadcrumb">
+								<li class="breadcrumb-item"><a href="#">Home</a></li>
+								<li class="breadcrumb-item active" aria-current="page">Contact us</li>
+							</ol>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Promo End -->
+
+	<!-- Main Start -->
+	<main class="main sec-padding my-account">
+		<div class="container">
+			<div class="row g-5 align-self-stretch">
+				<div class="col-lg-6 col-12">
+					<div class="contact-us ct-bg p-sm-5 p-4 h-100">
+						<h2 class="sub-title mb-5 border-bottom pb-4">get in touch</h2>
+						<form id="contactForm" action="send_email.php" method="POST">
+							<div class="mb-3">
+							   <input class="form-control" type="text" name="full_name" placeholder="Full Name *" required>
+							</div>
+							<div class="mb-3">
+							   <input class="form-control" type="number" name="phone" placeholder="Phone *" required>
+							</div>
+							<div class="mb-3">
+							   <input class="form-control" type="email" name="email" placeholder="Email *" required>
+							</div>
+							<div class="mb-3">
+							   <!-- Changed password input to a textarea for "Your Message" -->
+							   <textarea class="form-control" name="message" placeholder="Your Message *" required></textarea>
+							</div>
+						 
+							<button class="btn btn-primary mt-3" type="submit">Send Message</button>
+						 </form>
+						 <br>
+						 <div id="successPopup" style="display:none;">
+							<p>Message sent successfully! Our team will contact you soon.</p>
+						</div>
+						 
+						<div class="contact-widget widget mt-5 pt-4">
+							<h3 class="sub-title xs-title mb-4">
+								Contact Info:
+							</h3>
+							<ul class="list-unstyled">
+								<li><img class="me-3" src="images/icons/tel-g.png" alt=""><a href="tel:+91 9585943849">+91 9585943849</a></li>
+								<li><img class="me-3" src="images/icons/loc-g.png" alt="">No. 99/100, Kovil medu, Yercaud, Salem Dt - 636601</li>
+								<li><img class="me-3" src="images/icons/message.png"alt=""><a href="mailto:ridenexa@gmail.com">abaraham143@gmail.com</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-12">
+					<div class="google-map h-100">
+						<iframe
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3904.653279781246!2d78.24743067482204!3d11.859525488362967!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac0af876ef4de9%3A0xe3d154ec1a78cf69!2s99%2C%20Yercaud%20Cauvery%20Peak%20Rd%2C%20Vellakkadai%2C%20Tamil%20Nadu%20636602!5e0!3m2!1sen!2sin!4v1739966722978!5m2!1sen!2sin"
+							width="100%" style="border:0;" allowfullscreen="" loading="lazy"
+							referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+
+				</div>
+
+			</div>
+		</div>
+	</main>
+	<!-- Main End -->
+
+	<!-- Footer Start -->
+	<footer class="footer footer-default">
+		<div class="footer-app">
+		   <div class="container">
+			  <!-- <div class="row align-items-center app-wrap bg-primary">
+				 <div class="col-lg-7">
+					<div class="app-txt">
+					   <span class="dot-title text-uppercase">download our mobile application</span>
+					   <h2 class="sec-title text-uppercase">Get our mobile App for Effortless Rides!</h2>
+					</div>
+				 </div>
+				 <div class="col-lg-5 d-flex app-cta">
+					<a href="#"><img src="images/app-s2.png" alt=""></a>
+					<a href="#"><img src="images/gplay-s2.png" alt=""></a>
+				 </div>
+			  </div> -->
+		   </div>
+		</div>
+		<div class="footer-top sec-padding" style="background-image: url('images/footer-bg.png')">
+		   <div class="container">
+			  <div class="row">
+				 <div class="col-lg-12">
+					<div class="d-sm-flex justify-content-between flex-sm-wrap">
+					   <div class="widget about-widget">
+						  <div class="f-logo mb-5">
+							 <a href="index-2.html"><img src="images/logo.png" alt="Logo"></a>
+						  </div>
+						  <p>We offer exceptional travel experiences in Yercaud with top-quality transportation and curated sightseeing tours. Our personalized packages showcase the beauty of Yercaud, making your visit unforgettable. Whether for relaxation or adventure, we’ll guide you through scenic landscapes and popular attractions for a memorable journey.</p>
+						  <div class="call-txt mt-5">
+							 <!-- <h4>Toll free <span class="text-primary fs-6">Helpline</span>
+							 </h4> -->
+							 <!-- <a href="tel:+911234567890">(+91) 1234567890</a> -->
+						  </div>
+					   </div> <!-- Widget End -->
+					   <div class="widget">
+						  <h4 class="text-white text-capitalize mb-5">our services:</h4>
+						  <ul class="list-unstyled">
+							 <li><a href="#">Lady's Seat Viewpoint</a></li>
+							 <li><a href="#">Chocolate Factory</a></li>
+							 <li><a href="#">Boating</a></li>
+							 <!-- <li><a href="#">taxi reserve</a></li>
+							 <li><a href="#">web development</a></li>
+							 <li><a href="#">ui/ux design</a></li> -->
+						  </ul>
+						  
+					   </div><!-- Widget End -->
+					   <div class="widget contact-widget">
+						  <h4 class="text-white text-capitalize mb-5">Contact us</h4>
+						  <p>No. 99/100, Kovil medu, Yercaud, Salem Dt - 636601</p>
+						  <ul class="list-unstyled">
+							 <li>Phone :<a href="#">+91 9585943849</a></li>
+							 <li>Email :<a href="#">abaraham143@gmail.com</a></li>
+							 <!-- <li>fax :<a href="#"> info @ride nexa</a></li> -->
+						  </ul>
+					   </div><!-- Widget End -->
+					   <!-- <div class="widget newsletter-widget">
+						  <h4 class="text-white text-capitalize mb-5">newsletter:</h4>
+						  <form action="#">
+							 <input class="form-control" type="email" placeholder="Enter your email">
+							 <button class="btn btn-primary my-3">Subscribe Now</button>
+							 <div class="form-check mt-4">
+								<input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+								<label class="form-check-label text-white" for="flexCheckDefault">
+								   I agree to email receive.
+								</label>
+							 </div>
+						  </form>
+					   </div> -->
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+		<div class="footer-bottom">
+		   <div class="container">
+			  <div class="row align-items-center">
+				 <div class="col-lg-6 col-sm-6 order-2 order-sm-1">
+					<p class="copy-right mb-0 text-white">© 2025 Bison Taxi and Travels. Made by || <a class="text-primary"
+						  href="" target="_blank" rel="noopener"></a>
+					</p>
+				 </div>
+				 <div class="col-lg-6 col-sm-6 order-1 order-sm-2">
+					<div class="social-share text-sm-end">
+					   <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					   <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+					   <a href="#"><i class="fa-brands fa-skype"></i></a>
+					   <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+					</div>
+				 </div>
+			  </div>
+		   </div>
+		</div>
+	 </footer>
+	<!-- Footer End -->
+
+	<!-- Back to top -->
+	<div class="back-top"><i class="fa-solid fa-chevron-up"></i></div>
+
+	<!--Javascript
+   	========================================================-->
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/bootstrap.bundle.min.js"></script>
+	<script src="js/swiper-bundle.min.js"></script>
+	<script src="js/purecounter_vanilla.js"></script>
+	<script src="js/venobox.min.js"></script>
+	<script src="js/nice-select2.js"></script>
+	<script src="js/custom.js"></script><script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"rayId":"9143bbf3bb0d40f6","version":"2025.1.0","r":1,"serverTiming":{"name":{"cfExtPri":true,"cfL4":true,"cfSpeedBrain":true,"cfCacheStatus":true}},"token":"389fa74406c44f21b129709ce8a3ec16","b":1}' crossorigin="anonymous"></script>
