@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $mail->Port = 587;
 
         // Sender's email and name
-        $mail->setFrom('sathish.com', 'Bison Taxi and Travels');  // Sender's email and name
+        $mail->setFrom('sathish.com', 'Yercaud Bison Taxi');  // Sender's email and name
         $mail->addReplyTo($email, $fullName);  // The email to reply to
 
         // Receiver's email
@@ -37,7 +37,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
         // Email subject and body
         $mail->isHTML(true);
-        $mail->Subject = 'New Message from Bison Taxi and Travels Contact Form';
+        $mail->Subject = 'New Message from Yercaud Bison Taxi Contact Form';
         $mail->Body = "
             <html>
         <head>
